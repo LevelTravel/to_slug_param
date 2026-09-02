@@ -12,7 +12,7 @@ module RailsI18n
           lambda do |string|
             chars = string.scan(%r{#{multi_keys.join '|'}|\w|.})
 
-            result = String.new
+            result = String.new(encoding: Encoding::UTF_8)
 
             chars.each_with_index do |char, index|
               if upper.has_key?(char) && lower.has_key?(chars[index+1])
