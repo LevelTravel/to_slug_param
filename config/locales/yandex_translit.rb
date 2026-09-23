@@ -4,7 +4,7 @@
 # (c) Yaroslav Markin, Julian "julik" Tarkhanov and Co
 # https://github.com/yaroslav/russian/blob/master/lib/russian/transliteration.rb
 
-module RailsI18n
+module ::RailsI18n
   module Transliteration
     module Russian
       class << self
@@ -94,4 +94,4 @@ end
 { :ru => {
     :i18n => {
       :transliterate => {
-        :rule => RailsI18n::Transliteration::Russian.rule }}}}
+        :rule => ::RailsI18n::Transliteration::Russian.rule }}}}
